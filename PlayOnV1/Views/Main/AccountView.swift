@@ -5,4 +5,18 @@
 //  Created by Juliana Ruiz  on 1/28/22.
 //
 
-import Foundation
+import SwiftUI
+
+struct AccountView: View {
+    var body: some View {
+        NavigationView {
+            Text("Account View")
+                .navigationTitle("Account View")
+        }
+    }
+}
+struct AccountView_Previews: PreviewProvider {
+    static var previews: some View {
+        AccountView()
+    }
+}

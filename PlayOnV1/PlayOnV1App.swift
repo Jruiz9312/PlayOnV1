@@ -11,7 +11,7 @@ import SwiftUI
 struct PlayOnV1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccountView()
         }
     }
 }
