@@ -10,8 +10,11 @@ import SwiftUI
 struct PostsView: View {
     var body: some View {
         NavigationView {
-            PostList(playerPost:PlayerPost.all)
-                    
+            ScrollView{
+                PostList(playerPost:PlayerPost.all)
+            }
+            .navigationTitle("Active Posts")
+        
                 
         }
         .navigationViewStyle(.stack)
@@ -22,6 +25,8 @@ struct PostsView: View {
 
 struct PostsView_Previews: PreviewProvider {
     static var previews: some View {
+   
         PostsView()
     }
 }
+
