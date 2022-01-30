@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct PostList: View {
+    var playerPost: [PlayerPost]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack{
+                Text("\(playerPost.count)\(playerPost.count > 1 ? " Active Posts": "playerPost")")
+                    .font(.headline)
+                    .fontWeight(.medium)
+                .opacity(0.7)
+                
+                Spacer()
+                
+            }
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 160),spacing:15)],spacing: 15) {
+                ForEach(playerPost){playerPost in
+                    PostCard(playerPost:playerPost)
+                    
+                }
+            }
+            .padding(.top)
+        }
+        .padding(.horizontal)
     }
 }
 
 struct PostList_Previews: PreviewProvider {
     static var previews: some View {
-        PostList()
+        ScrollView{
+            PostList(playerPost: PlayerPost.all)
+        }
     }
 }
