@@ -23,7 +23,9 @@ struct PostList: View {
             }
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 160),spacing:15)],spacing: 15) {
                 ForEach(playerPost){playerPost in
-                    PostCard(playerPost:playerPost)
+                    NavigationLink(destination: PostCardView(playerPost: playerPost)){
+                        PostCard(playerPost:playerPost)
+                    }
                     
                 }
             }

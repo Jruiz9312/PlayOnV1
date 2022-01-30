@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct NewPostView: View {
+    @State private var showAddPostCard = false
     var body: some View {
         NavigationView {
-            Text("New Post View")
-                .navigationTitle("Create a Post")
+            Button("Create New Post"){
+                showAddPostCard = true
+            }
+            .navigationTitle("Create a Post")
         }
         .navigationViewStyle(.stack)
+        .sheet(isPresented: $showAddPostCard){
+            AddPostView()
+        }
     }
 }
 

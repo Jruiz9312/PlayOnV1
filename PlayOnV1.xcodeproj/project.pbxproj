@@ -22,6 +22,7 @@
 		7780A9AE27A63CF5000A8E05 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9AD27A63CF5000A8E05 /* PostCard.swift */; };
 		7780A9B027A63D1D000A8E05 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9AF27A63D1D000A8E05 /* PostList.swift */; };
 		7780A9B227A67A40000A8E05 /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9B127A67A40000A8E05 /* PostCardView.swift */; };
+		7780A9B627A68BFA000A8E05 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9B527A68BFA000A8E05 /* AddPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7780A9AD27A63CF5000A8E05 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
 		7780A9AF27A63D1D000A8E05 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		7780A9B127A67A40000A8E05 /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
+		7780A9B527A68BFA000A8E05 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		7780A98727A4B68D000A8E05 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				7780A9B527A68BFA000A8E05 /* AddPostView.swift */,
 				7780A9B127A67A40000A8E05 /* PostCardView.swift */,
 			);
 			path = Details;
@@ -245,6 +248,7 @@
 				7780A9B027A63D1D000A8E05 /* PostList.swift in Sources */,
 				7780A9A227A4C10B000A8E05 /* AccountView.swift in Sources */,
 				7780A97427A4AD33000A8E05 /* PlayOnV1App.swift in Sources */,
+				7780A9B627A68BFA000A8E05 /* AddPostView.swift in Sources */,
 				7780A9B227A67A40000A8E05 /* PostCardView.swift in Sources */,
 				7780A99C27A4C065000A8E05 /* PostsView.swift in Sources */,
 				7780A99E27A4C075000A8E05 /* NewPostView.swift in Sources */,

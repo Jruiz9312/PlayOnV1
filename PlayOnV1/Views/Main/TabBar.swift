@@ -32,8 +32,8 @@ struct TabBar: View {
                 .tabItem{
                 Label("Account", systemImage: "gear")
             }
-           
         }
+        .background(Color.orange)
     }
 }
 
@@ -41,15 +41,6 @@ struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TabBar()
-            TabBar()
-            TabBar()
-            TabBar()
-            TabBar()
-                .previewInterfaceOrientation(.landscapeLeft)
-            TabBar()
-                .previewInterfaceOrientation(.landscapeLeft)
-            TabBar()
-                .previewInterfaceOrientation(.landscapeLeft)
            
         }
     }
