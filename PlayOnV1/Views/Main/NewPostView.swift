@@ -13,6 +13,7 @@ struct NewPostView: View {
             Text("New Post View")
                 .navigationTitle("Create a Post")
         }
+        .navigationViewStyle(.stack)
     }
 }
 

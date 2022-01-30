@@ -10,10 +10,11 @@ import SwiftUI
 struct FavoritesView: View {
     var body: some View {
         NavigationView {
-            Text("You haven't saved an recipes to your favorites")
+            Text("You haven't saved any posts to your favorites")
                 .padding()
                 .navigationTitle("Favorites")
         }
+        .navigationViewStyle(.stack)
     }
 }
 struct FavoritesView_Previews: PreviewProvider {
