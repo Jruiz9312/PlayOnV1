@@ -41,6 +41,15 @@ struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TabBar()
+            TabBar()
+            TabBar()
+            TabBar()
+            TabBar()
+                .previewInterfaceOrientation(.landscapeLeft)
+            TabBar()
+                .previewInterfaceOrientation(.landscapeLeft)
+            TabBar()
+                .previewInterfaceOrientation(.landscapeLeft)
            
         }
     }

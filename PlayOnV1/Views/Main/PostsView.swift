@@ -12,14 +12,22 @@ struct PostsView: View {
         NavigationView {
             List(PlayerPost.all) { playerPost in
                 Text(playerPost.title)
-                    .padding()
+//
                     .navigationTitle("Main Page")
+                    .font(.headline)
+                    .padding()
+                    .cornerRadius(50)
+                    
+                    
                 
             }
         }
         .navigationViewStyle(.stack)
         .padding()
+        .background(.orange)
+        
     }
+        
 }
 
 struct PostsView_Previews: PreviewProvider {

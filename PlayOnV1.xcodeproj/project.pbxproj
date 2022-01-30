@@ -19,7 +19,8 @@
 		7780A9A427A4C11F000A8E05 /* PlayerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9A327A4C11F000A8E05 /* PlayerID.swift */; };
 		7780A9A627A4C598000A8E05 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9A527A4C598000A8E05 /* TabBar.swift */; };
 		7780A9A827A4CEF3000A8E05 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9A727A4CEF3000A8E05 /* PostModel.swift */; };
-		7780A9AC27A4CF39000A8E05 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9AB27A4CF39000A8E05 /* PostCard.swift */; };
+		7780A9AE27A63CF5000A8E05 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9AD27A63CF5000A8E05 /* PostCard.swift */; };
+		7780A9B027A63D1D000A8E05 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9AF27A63D1D000A8E05 /* PostList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +37,8 @@
 		7780A9A327A4C11F000A8E05 /* PlayerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerID.swift; sourceTree = "<group>"; };
 		7780A9A527A4C598000A8E05 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		7780A9A727A4CEF3000A8E05 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
-		7780A9AB27A4CF39000A8E05 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		7780A9AD27A63CF5000A8E05 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		7780A9AF27A63D1D000A8E05 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +141,8 @@
 		7780A98827A4B6A2000A8E05 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				7780A9AB27A4CF39000A8E05 /* PostCard.swift */,
+				7780A9AF27A63D1D000A8E05 /* PostList.swift */,
+				7780A9AD27A63CF5000A8E05 /* PostCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -233,9 +236,10 @@
 				7780A9A827A4CEF3000A8E05 /* PostModel.swift in Sources */,
 				7780A97627A4AD33000A8E05 /* ContentView.swift in Sources */,
 				7780A99A27A4BF0B000A8E05 /* HomeView.swift in Sources */,
-				7780A9AC27A4CF39000A8E05 /* PostCard.swift in Sources */,
+				7780A9AE27A63CF5000A8E05 /* PostCard.swift in Sources */,
 				7780A9A027A4C0F9000A8E05 /* FavoritesView.swift in Sources */,
 				7780A9A427A4C11F000A8E05 /* PlayerID.swift in Sources */,
+				7780A9B027A63D1D000A8E05 /* PostList.swift in Sources */,
 				7780A9A227A4C10B000A8E05 /* AccountView.swift in Sources */,
 				7780A97427A4AD33000A8E05 /* PlayOnV1App.swift in Sources */,
 				7780A99C27A4C065000A8E05 /* PostsView.swift in Sources */,
