@@ -18,6 +18,7 @@ struct AddPostView: View {
     @State private var league: String = ""
     @State private var location: String = ""
     @State private var textBox: String = ""
+    @State private var navigateToPost = false
     
     @Environment(\.dismiss) var dismiss
    
@@ -27,36 +28,36 @@ struct AddPostView: View {
         NavigationView{
         Form{
             Section(header: Text("Title")){
-                TextField("Post Title",text: $title)
+                TextEditor(text: $title)
             }
             Section(header: Text("Author")){
-                TextField("Author",text: $author)
+                TextEditor(text: $author)
             }
             Section(header: Text("Contact")){
-                TextField("Contact Info",text: $contactInfo)
+                TextEditor(text: $contactInfo)
             }
             Section(header: Text("Date of Game")){
-                TextField("Date of Game",text: $gameDate)
+                TextEditor(text:  $gameDate)
             }
             Section(header: Text("Competive Level")){
-                TextField("Date of Game",text: $gameDate)
+                TextEditor(text:  $gameDate)
 
             }
             Section(header: Text("Field Type")){
-                TextField("Field Type ",text: $fieldType)
+                TextEditor(text:  $fieldType)
             }
             Section(header: Text("league")){
-                TextField("league",text: $league)
+                TextEditor(text: $league)
             }
             Section(header: Text("Location")){
-                TextField("Location",text: $location)
+                TextEditor(text: $location)
             }
             Section(header: Text("Game Day Info")){
-                TextField("Game Day Info",text: $textBox)
+                TextEditor(text:  $textBox)
             }
         }
         .toolbar(content: {
-            ToolbarItem(placement: .navigationBarLeading){
+            ToolbarItem(placement:   .navigationBarLeading){
                 Button{
                     dismiss()
                     
@@ -65,17 +66,23 @@ struct AddPostView: View {
                         .labelStyle(.iconOnly)
                 }
             }
-           
+            
                 ToolbarItem{
+                    NavigationLink(isActive: $navigateToPost){
+//                        PostsView(playerPost: PlayerPost.all.sorted{$0.dataPublisted > $1.dataPublisted}[0])
+//                            .navigationBarBackButtonHidden(true)
+                    }label: {
                     Button{
+                        navigateToPost = true
                         
                     }label:{
                         Label("Done", systemImage:"checkmark")
                             .labelStyle(.iconOnly)
                     }
-                    .disabled(title.isEmpty)
                 }
-        })
+                    .disabled(title.isEmpty)
+            }
+    })
         .navigationTitle("Create Post")
         .navigationBarTitleDisplayMode(.inline)
         }
@@ -86,5 +93,7 @@ struct AddPostView: View {
 struct AddPostView_Previews: PreviewProvider {
     static var previews: some View {
         AddPostView()
+        }
     }
-}
+
+                 
