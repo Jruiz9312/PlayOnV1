@@ -10,15 +10,15 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         TabView {
-            HomeView()
-                .tabItem{
-                    Label("Home", systemImage: "house")
-                }
             
             PostsView()
                 .tabItem{
                 Label("Posts", systemImage:"square.fill.text.grid.1x2")
             }
+            CategoriesView()
+                .tabItem{
+                    Label("Age Groups", systemImage: "square.grid.2x2")
+                }
     
             NewPostView()
                 .tabItem{

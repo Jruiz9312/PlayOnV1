@@ -13,14 +13,10 @@ struct PostList: View {
     var body: some View {
         HStack {
             VStack{
-                Text("\(playerPost.count)\(playerPost.count > 1 ? " Active Posts": "playerPost")")
-                    .font(.headline)
-                    .fontWeight(.medium)
-                .opacity(0.7)
-                
-                Spacer()
+               
                 
             }
+    
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 160),spacing:15)],spacing: 15) {
                 ForEach(playerPost){playerPost in
                     NavigationLink(destination: PostCardView(playerPost: playerPost)){

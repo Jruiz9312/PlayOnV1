@@ -47,7 +47,7 @@ struct PostCardView: View {
                             
                         
                         Text(playerPost.gameDate)
-                        Text(playerPost.ageGroup)
+                        Text(playerPost.groupAge)
                         Text(playerPost.compLevel)
                         Text(playerPost.fieldType)
                         Text(playerPost.league)
