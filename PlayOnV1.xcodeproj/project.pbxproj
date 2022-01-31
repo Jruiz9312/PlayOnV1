@@ -23,6 +23,7 @@
 		7780A9B027A63D1D000A8E05 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9AF27A63D1D000A8E05 /* PostList.swift */; };
 		7780A9B227A67A40000A8E05 /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9B127A67A40000A8E05 /* PostCardView.swift */; };
 		7780A9B627A68BFA000A8E05 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9B527A68BFA000A8E05 /* AddPostView.swift */; };
+		77CE45BD27A751A4009E50AA /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE45BC27A751A4009E50AA /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		7780A9AF27A63D1D000A8E05 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		7780A9B127A67A40000A8E05 /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
 		7780A9B527A68BFA000A8E05 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		77CE45BC27A751A4009E50AA /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		7780A98927A4B6B9000A8E05 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				77CE45BC27A751A4009E50AA /* PostViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CE45BD27A751A4009E50AA /* PostViewModel.swift in Sources */,
 				7780A9A627A4C598000A8E05 /* TabBar.swift in Sources */,
 				7780A9A827A4CEF3000A8E05 /* PostModel.swift in Sources */,
 				7780A97627A4AD33000A8E05 /* ContentView.swift in Sources */,

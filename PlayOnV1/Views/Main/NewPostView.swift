@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NewPostView: View {
-    @State private var showAddPostCard = false
+    @State private var showAddPostCard = true
     var body: some View {
         NavigationView {
             Button("Create New Post"){

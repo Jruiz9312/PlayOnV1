@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct AddPostView: View {
+    
+    @EnvironmentObject var playerPostVM: PostViewModel
+    
+    
     @State private var title: String = ""
     @State private var author: String = ""
     @State private var contactInfo: String = ""
     @State private var gameDate: String = ""
-    @State private var ageGroup: String = ""
+    @State private var selectedgroupAge: GroupAge = GroupAge.open
     @State private var compLevel: String = ""
     @State private var fieldType: String = ""
     @State private var league: String = ""
@@ -40,7 +44,18 @@ struct AddPostView: View {
                 TextEditor(text:  $gameDate)
             }
             Section(header: Text("Competive Level")){
-                TextEditor(text:  $gameDate)
+                   TextEditor(text: $compLevel)
+                 
+                
+            }
+            Section(header: Text("Age Group")){
+                Picker("Age Group", selection: $selectedgroupAge){
+                    ForEach(GroupAge.allCases){ groupAge in
+                        Text(groupAge.rawValue)
+                            .tag(groupAge)
+                    }
+                }
+                .pickerStyle(.menu)
 
             }
             Section(header: Text("Field Type")){
@@ -57,7 +72,7 @@ struct AddPostView: View {
             }
         }
         .toolbar(content: {
-            ToolbarItem(placement:   .navigationBarLeading){
+            ToolbarItem(placement:.navigationBarLeading){
                 Button{
                     dismiss()
                     
@@ -68,19 +83,13 @@ struct AddPostView: View {
             }
             
                 ToolbarItem{
-                    NavigationLink(isActive: $navigateToPost){
-//                        PostsView(playerPost: PlayerPost.all.sorted{$0.dataPublisted > $1.dataPublisted}[0])
-//                            .navigationBarBackButtonHidden(true)
-                    }label: {
                     Button{
-                        navigateToPost = true
                         
-                    }label:{
+                    } label:{
                         Label("Done", systemImage:"checkmark")
                             .labelStyle(.iconOnly)
                     }
-                }
-                    .disabled(title.isEmpty)
+                .disabled(title.isEmpty)
             }
     })
         .navigationTitle("Create Post")
@@ -90,10 +99,16 @@ struct AddPostView: View {
     }
 }
 
+                 
+                 
 struct AddPostView_Previews: PreviewProvider {
     static var previews: some View {
         AddPostView()
+            .environmentObject(PostViewModel())
         }
     }
 
+
+
                  
+

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PlayOnV1App: App {
+    @StateObject var postViewModel = PostViewModel()
+    
     var body: some Scene {
         WindowGroup {
             AccountView()
+                .environmentObject(postViewModel)
         }
     }
 }

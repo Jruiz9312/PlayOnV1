@@ -22,7 +22,7 @@ struct TabBar: View {
     
             NewPostView()
                 .tabItem{
-                Label("New", systemImage:"plus")
+                Label("New Post", systemImage:"plus")
             }
             FavoritesView()
                 .tabItem{
@@ -30,18 +30,19 @@ struct TabBar: View {
             }
             AccountView()
                 .tabItem{
-                Label("Account", systemImage: "gear")
+                Label("Profile", systemImage: "person")
             }
         }
-        .background(Color.orange)
+        .background(Color.orange)  
     }
 }
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
             TabBar()
+            .environmentObject(PostViewModel())
            
-        }
+        
     }
 }
+    

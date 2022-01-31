@@ -16,6 +16,7 @@ struct PostCardView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     
+                    
 
             } placeholder: {
                 Image(systemName: "image")
@@ -52,7 +53,7 @@ struct PostCardView: View {
                         Text(playerPost.fieldType)
                         Text(playerPost.league)
                         Text(playerPost.location)
-                        Text(playerPost.dataPublisted)
+                        Text(playerPost.datePublished)
                         Text(playerPost.author)
                         Text(playerPost.contactInfo)
                             
