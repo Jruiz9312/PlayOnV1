@@ -24,6 +24,7 @@
 		7780A9B227A67A40000A8E05 /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9B127A67A40000A8E05 /* PostCardView.swift */; };
 		7780A9B627A68BFA000A8E05 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780A9B527A68BFA000A8E05 /* AddPostView.swift */; };
 		77CE45BD27A751A4009E50AA /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE45BC27A751A4009E50AA /* PostViewModel.swift */; };
+		77CE45BF27A79EBE009E50AA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE45BE27A79EBE009E50AA /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		7780A9B127A67A40000A8E05 /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
 		7780A9B527A68BFA000A8E05 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
 		77CE45BC27A751A4009E50AA /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		77CE45BE27A79EBE009E50AA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				7780A97527A4AD33000A8E05 /* ContentView.swift */,
+				77CE45BE27A79EBE009E50AA /* LoginView.swift */,
 				7780A9A527A4C598000A8E05 /* TabBar.swift */,
 				7780A99B27A4C065000A8E05 /* PostsView.swift */,
 				7780A99927A4BF0B000A8E05 /* CategoriesView.swift */,
@@ -255,6 +258,7 @@
 				7780A9B627A68BFA000A8E05 /* AddPostView.swift in Sources */,
 				7780A9B227A67A40000A8E05 /* PostCardView.swift in Sources */,
 				7780A99C27A4C065000A8E05 /* PostsView.swift in Sources */,
+				77CE45BF27A79EBE009E50AA /* LoginView.swift in Sources */,
 				7780A99E27A4C075000A8E05 /* NewPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
