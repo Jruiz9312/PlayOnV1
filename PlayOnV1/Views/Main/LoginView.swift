@@ -64,10 +64,10 @@ struct UserImage : View {
             Image("logo")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 320, height: 310)
+                .frame(width: 320, height: 320)
                 .clipped()
                 .cornerRadius(150)
-                .padding(.bottom, 25)
+                .padding(.bottom, 35)
         }
     }
 }

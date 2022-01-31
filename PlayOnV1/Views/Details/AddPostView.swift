@@ -17,8 +17,8 @@ struct AddPostView: View {
     @State private var contactInfo: String = ""
     @State private var gameDate: String = ""
     @State private var selectedgroupAge: GroupAge = GroupAge.open
-    @State private var compLevel: String = ""
-    @State private var fieldType: String = ""
+    @State private var selectedlevel: Level = Level.recreactional
+    @State private var selectedfield: Field = Field.indoor
     @State private var league: String = ""
     @State private var location: String = ""
     @State private var textBox: String = ""
@@ -43,11 +43,7 @@ struct AddPostView: View {
             Section(header: Text("Date of Game")){
                 TextEditor(text:  $gameDate)
             }
-            Section(header: Text("Competive Level")){
-                   TextEditor(text: $compLevel)
-                 
-                
-            }
+           
             Section(header: Text("Age Group")){
                 Picker("Age Group", selection: $selectedgroupAge){
                     ForEach(GroupAge.allCases){ groupAge in
@@ -58,9 +54,27 @@ struct AddPostView: View {
                 .pickerStyle(.menu)
 
             }
-            Section(header: Text("Field Type")){
-                TextEditor(text:  $fieldType)
+            Section(header: Text("Competitive Level")){
+                Picker("Competitive Level", selection: $selectedlevel){
+                    ForEach(Level.allCases){ level in
+                        Text(level.rawValue)
+                            .tag(level)
+                        
+                    }
+                }
+                .pickerStyle(.menu)
             }
+            Section(header: Text("Field Type")){
+                Picker("Field Type", selection: $selectedfield){
+                    ForEach(Field.allCases){ field in
+                        Text(field.rawValue)
+                            .tag(field)
+                        
+                    }
+                }
+                .pickerStyle(.menu)
+            }
+            
             Section(header: Text("league")){
                 TextEditor(text: $league)
             }

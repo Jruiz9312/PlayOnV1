@@ -13,7 +13,7 @@ struct PlayOnV1App: App {
     
     var body: some Scene {
         WindowGroup {
-            AccountView()
+            TabBar()
                 .environmentObject(postViewModel)
         }
     }
